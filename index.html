@@ -1348,7 +1348,7 @@ blockquote cite{display:block;margin-top:0.8rem;font-family:var(--font-mono2);
   <div class="math-box">
     <span class="math-box-label">Funkcja korelacji dwupunktowej · definicja kryształu czasu</span>
     $$C(t) = \langle\psi|\hat{O}(t)\hat{O}(0)|\psi\rangle \neq 0 \quad \text{dla } t \to \infty$$
-    <span class="math-note">W zwykłej fazie $C(t) \to 0$ przez dekoherencję. W fazie kryształu czasu $C(t)$ oscyluje bez zaniku — topologiczna ochrona. Próżnia kwantowa oscyluje we wszystkich modach z $\frac{1}{2}\hbar\omega$ globalnie koherentnie: spełnia dokładnie tę definicję — jest fundamentalną fazą kryształu czasu, na której wszystkie inne fazy są wzbudzeniami.</span>
+    <span class="math-note">W zwykłej fazie $C(t) \to 0$ przez dekoherencję. W fazie kryształu czasu $C(t)$ oscyluje bez zaniku — topologiczna ochrona, wymagająca układu napędzanego periodycznie i fazy MBL. <strong>Korekta:</strong> próżnia $|0\rangle$ jest stanem własnym Hamiltonianu — wartości oczekiwane operatorów lokalnych są w niej stałe w czasie (stacjonarność), nie oscylują. Energia zerowa $\frac{1}{2}\hbar\omega$ to fakt o widmie, nie złamanie symetrii translacji czasowej w sensie definicji podanej wyżej. To dwa różne zjawiska pod wspólną etykietą "oscylacja" — nie: próżnia "dokładnie spełnia" definicję kryształu czasu.</span>
   </div>
 <div class="svg-wrap"><svg width="100%" viewBox="0 0 680 460" xmlns="http://www.w3.org/2000/svg">
 <defs>
@@ -1657,6 +1657,9 @@ blockquote cite{display:block;margin-top:0.8rem;font-family:var(--font-mono2);
     $$|\psi_{S|O}\rangle \neq |\psi_{S|O'}\rangle \quad \text{— niesprzeczność, nie paradoks}$$
     <span class="math-note">Stan kwantowy układu $S$ istnieje wyłącznie względem układu $O$ który z nim oddziałuje. Nie ma kolapsowania przez "świadomość" — jest wyłanianie się konkretnego stanu przez wzajemną interakcję. Dwa układy które nie oddziałują mogą mieć niespójne opisy trzeciego i to nie jest sprzeczność — to geometria relacyjności.</span>
   </div>
+  <div class="analysis-box">
+    <p><strong>Zastrzeżenie:</strong> RQM jest jedną z kilku interpretacji QM empirycznie nierozróżnialnych od siebie (obok Bohma, QBismu, Kopenhagi, Everetta), z aktywną, nierozstrzygniętą krytyką techniczną — Brukner (2021, "Qubits are not observers — a no-go theorem") pokazuje, że stan relatywny w RQM nie może reprezentować "wiedzy obserwatora" bez rozwiązania problemu preferowanej bazy; Pienaar (2021, "A quintet of quandaries") dodaje pięć dalszych twierdzeń no-go. Rovelli i Di Biagio odpowiedzieli (2022), spór trwa w literaturze. TERJ opiera się tu na jednej stronie żywej debaty, nie na ustalonym konsensusie.</p>
+  </div>
 
   <div class="sec-title">§6.3 · Algebra C* i Haag-Kastler — relacja przed przestrzenią stanów</div>
 <div class="svg-wrap"><svg width="100%" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg">
@@ -1722,10 +1725,11 @@ blockquote cite{display:block;margin-top:0.8rem;font-family:var(--font-mono2);
 <text x="340" y="372" text-anchor="middle" style="fill:rgb(250, 249, 245);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:auto">komutator jako miara relacyjności</text>
 <text x="340" y="392" text-anchor="middle" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">[Â, B̂] = ÂB̂ - B̂Â</text>
 <text x="340" y="410" text-anchor="middle" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">[Â, B̂] = 0: obserwable niezależne — brak relacji</text>
-<text x="340" y="426" text-anchor="middle" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">[Â, B̂] ≠ 0: obserwable splątane — relacja fundamentalna</text>
+<text x="340" y="426" text-anchor="middle" style="fill:rgb(194, 192, 182);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:auto">[Â, B̂] ≠ 0: pomiary niekompatybilne (nie: splątane)</text>
 </svg><span class="svg-caption">algebra C* i twierdzenie Haaga-Kastlera · różne reprezentacje tej samej algebry · algebra głębsza niż przestrzeń Hilberta</span></div>
   <div class="analysis-box">
     <p>Diagram pokazuje kluczowe twierdzenie: <strong>ta sama algebra $C^*$ obserwabli</strong> może być reprezentowana przez różne przestrzenie Hilberta $\mathcal{H}_1, \mathcal{H}_2, \mathcal{H}_3$ — i wszystkie opisują tę samą fizykę. Algebra jest głębsza niż jej reprezentacje. W TERJ: konkretna architektura $\hat{I}$ (nasza przestrzeń Hilberta, $\alpha = 1/137$, masy cząstek) jest <strong>jedną z możliwych reprezentacji</strong> głębszej algebry relacyjności.</p>
+    <p><strong>Korekta:</strong> $[\hat{A},\hat{B}]\neq 0$ to niekomutowanie — brak wspólnej bazy własnej, więc niekompatybilność pomiarowa (jak położenie i pęd tej samej cząstki). To nie to samo co splątanie (entanglement), które jest własnością relacyjną między co najmniej dwoma układami, nie własnością pojedynczej pary obserwabli. Mieszanie tych dwóch pojęć jest błędem kategorii.</p>
   </div>
   <div class="math-box">
     <span class="math-box-label">Lemat Yonedy · obiekt przez morfizmy</span>
@@ -2012,11 +2016,13 @@ blockquote cite{display:block;margin-top:0.8rem;font-family:var(--font-mono2);
 </svg><span class="svg-caption">pole potencjalności — $S_B \to \infty$ i $S_I = 0$ jednocześnie · szlemut absolutna · nie sprzeczność</span></div>
   <div class="analysis-box">
     <p>Diagram ukazuje paradoks pozorny który jest precyzyjnym opisem: <strong>$S_B \to \infty$</strong> (entropia Boltzmanna: nieskończona liczba równoważnych stanów) <em>oraz</em> <strong>$S_I = 0$</strong> (entropia informacyjna: zero utraty przez wybory — żaden wybór jeszcze nie padł). To nie sprzeczność — to opis stanu w którym nic nie zostało wykreślone. Wykreślenie jest właśnie tym czym jest emanacja: przejście od szlemut do konkretnej architektury $\hat{I}$.</p>
+    <p><strong>Zastrzeżenie metodologiczne:</strong> $S_B$ (Bekenstein-Hawking, $S=k_BA/4\ell_P^2$) i $S_I$ (Shannon) nie są dwoma niezależnymi wielkościami wskazującymi w różne strony — to ta sama formuła entropii zastosowana do dwóch wyborów podziału (coarse-grainingu) tej samej przestrzeni stanów. Czarna dziura maksymalizuje obie jednocześnie, bo to jeden formalizm, nie dwa. Precyzyjniej: pole potencjalności nie ma ustalonego coarse-grainingu, więc pytanie o jego entropię jest nierozstrzygnięte, dopóki nie wybierze się obserwatora/podziału — nie: „ma dwie entropie naraz".</p>
   </div>
   <div class="math-box">
     <span class="math-box-label">Dwa rodzaje entropii · pole potencjalności</span>
     $$S_{\text{Boltzmann}} = k_B \ln \Omega \to \infty \quad \text{(Ω nieskończone)}$$
     $$S_{\text{informacyjna}} = 0 \quad \text{(zero utraty — żaden wybór nie padł)}$$
+    <span class="math-note">$S_B$ i $S_I$ to jeden formalizm przy dwóch wyborach partycji, nie dwie ontologicznie odrębne kategorie entropii.</span>
   </div>
 
   <div class="sec-title">§7.2–7.3 · Czas urojony · Tzimtzum jako odwrotna rotacja Wicka</div>
@@ -2514,7 +2520,7 @@ blockquote cite{display:block;margin-top:0.8rem;font-family:var(--font-mono2);
     <span class="math-box-label">Tononi 2008 · miara świadomości Φ · neshama jako modulator Ĥ</span>
     $$\Phi = \min_{\text{partycja}} \left[ H(A|B) + H(B|A) \right]$$
     $$\hat{H}_{\text{neshama}}(t+\delta t) = \hat{H}_{\text{neshama}}(t) + \delta\hat{H}[\text{wybór}(t)]$$
-    <span class="math-note">$\Phi > 0$ oznacza że układ jest więcej niż sumą swoich części. $\Phi$ mierzy dokładnie $\hat{\varepsilon}$ — splątanie relacyjne. Wszystkie struktury dysypatywne absorbują gradient — ale żadna nie może projektować własnych warunków brzegowych. Neshama jest wyjątkowa: przez refleksję i wybór zmienia własny $\hat{H}$. Każdy akt chesed zmienia lokalną przestrzeń fazową.</span>
+    <span class="math-note">$\Phi > 0$ oznacza że układ jest więcej niż sumą swoich części. <strong>Korekta:</strong> $\Phi$ (IIT Tononiego) mierzy zintegrowaną informację przyczynową — działa nawet na układach czysto klasycznych, bez żadnej mechaniki kwantowej. $\hat{\varepsilon}$ tego dokumentu to operator splątania kwantowego. To dwa odrębne formalizmy matematyczne, nie ta sama wielkość pod różnymi nazwami — analogia, nie tożsamość. Wszystkie struktury dysypatywne absorbują gradient — ale żadna nie może projektować własnych warunków brzegowych. Neshama jest wyjątkowa: przez refleksję i wybór zmienia własny $\hat{H}$. Każdy akt chesed zmienia lokalną przestrzeń fazową.</span>
   </div>
 <div class="svg-wrap"><svg width="100%" viewBox="0 0 680 482" xmlns="http://www.w3.org/2000/svg">
 <defs>
